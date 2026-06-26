@@ -21,7 +21,7 @@ npx skills add https://github.com/tavily-ai/skills
 
 ```bash
 codex plugin marketplace add <path-to-this-repo>
-codex plugin add tavily@tavily-codex
+codex plugin add tavily@tavily-agents-plugins
 ```
 
 ### Install the Tavily CLI

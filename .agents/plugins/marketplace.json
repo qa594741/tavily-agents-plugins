@@ -1,7 +1,7 @@
 {
-  "name": "tavily-codex",
+  "name": "tavily-agents-plugins",
   "interface": {
-    "displayName": "Tavily for Codex"
+    "displayName": "Tavily Agents Plugins"
   },
   "plugins": [
     {
