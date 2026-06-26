@@ -21,10 +21,10 @@ claude plugin marketplace add qa594741/tavily-agents-plugins
 claude plugin install tavily@tavily-plugins
 ```
 
-For this local Windows checkout:
+For a checkout directly under your user home directory:
 
 ```bash
-claude plugin marketplace add "C:\Users\First Shen\personal\plugins\codex\tavily-agents-plugins"
+claude plugin marketplace add "$HOME\tavily-agents-plugins"
 claude plugin install tavily@tavily-plugins
 ```
 
@@ -37,10 +37,10 @@ codex plugin marketplace add qa594741/tavily-agents-plugins --ref main
 codex plugin add tavily@tavily-agents-plugins
 ```
 
-For this local Windows checkout:
+For a checkout directly under your user home directory:
 
 ```bash
-codex plugin marketplace add "C:\Users\First Shen\personal\plugins\codex\tavily-agents-plugins"
+codex plugin marketplace add "$HOME\tavily-agents-plugins"
 codex plugin add tavily@tavily-agents-plugins
 ```
 
