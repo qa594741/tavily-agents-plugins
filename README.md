@@ -10,18 +10,46 @@ Original upstream repository: [tavily-ai/skills](https://github.com/tavily-ai/sk
 
 ## Installation
 
-### Install skills
+### Install in Claude Code
+
+This repository includes the official Claude Code plugin manifest at `.claude-plugin/`.
+
+Add the marketplace, then install the plugin:
 
 ```bash
-# Agent skills (Claude Code, Cursor, etc.)
-npx skills add https://github.com/tavily-ai/skills
+claude plugin marketplace add https://github.com/qa594741/tavily-agents-plugins
+claude plugin install tavily@tavily-plugins
+```
+
+For a local checkout:
+
+```bash
+claude plugin marketplace add <path-to-this-repo>
+claude plugin install tavily@tavily-plugins
 ```
 
 ### Install in Codex
 
+This repository also includes a Codex plugin wrapper at `plugins/tavily/` and a Codex marketplace file at `.agents/plugins/marketplace.json`.
+
 ```bash
 codex plugin marketplace add <path-to-this-repo>
 codex plugin add tavily@tavily-agents-plugins
+```
+
+For the GitHub repository:
+
+```bash
+codex plugin marketplace add https://github.com/qa594741/tavily-agents-plugins
+codex plugin add tavily@tavily-agents-plugins
+```
+
+### Install as raw agent skills
+
+If you only want the skill files without plugin marketplace management:
+
+```bash
+npx skills add https://github.com/tavily-ai/skills
 ```
 
 ### Install the Tavily CLI
