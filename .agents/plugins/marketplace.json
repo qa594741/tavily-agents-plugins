@@ -1,0 +1,20 @@
+{
+  "name": "tavily-codex",
+  "interface": {
+    "displayName": "Tavily for Codex"
+  },
+  "plugins": [
+    {
+      "name": "tavily",
+      "source": {
+        "source": "local",
+        "path": "./plugins/tavily"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

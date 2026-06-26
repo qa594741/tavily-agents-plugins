@@ -2,6 +2,12 @@
 
 Web search, content extraction, site crawling, URL discovery, and deep research — powered by the Tavily CLI.
 
+## Codex Packaging
+
+This fork adds a Codex-compatible plugin wrapper under `plugins/tavily/` and a repo-local marketplace file at `.agents/plugins/marketplace.json`.
+
+Original upstream repository: [tavily-ai/skills](https://github.com/tavily-ai/skills)
+
 ## Installation
 
 ### Install skills
@@ -9,6 +15,13 @@ Web search, content extraction, site crawling, URL discovery, and deep research 
 ```bash
 # Agent skills (Claude Code, Cursor, etc.)
 npx skills add https://github.com/tavily-ai/skills
+```
+
+### Install in Codex
+
+```bash
+codex plugin marketplace add <path-to-this-repo>
+codex plugin add tavily@tavily-codex
 ```
 
 ### Install the Tavily CLI
