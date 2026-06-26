@@ -17,14 +17,14 @@ This repository includes the official Claude Code plugin manifest at `.claude-pl
 Add the marketplace, then install the plugin:
 
 ```bash
-claude plugin marketplace add https://github.com/qa594741/tavily-agents-plugins
+claude plugin marketplace add qa594741/tavily-agents-plugins
 claude plugin install tavily@tavily-plugins
 ```
 
-For a local checkout:
+For this local Windows checkout:
 
 ```bash
-claude plugin marketplace add <path-to-this-repo>
+claude plugin marketplace add "C:\Users\First Shen\personal\plugins\codex\tavily-agents-plugins"
 claude plugin install tavily@tavily-plugins
 ```
 
@@ -33,14 +33,14 @@ claude plugin install tavily@tavily-plugins
 This repository also includes a Codex plugin wrapper at `plugins/tavily/` and a Codex marketplace file at `.agents/plugins/marketplace.json`.
 
 ```bash
-codex plugin marketplace add <path-to-this-repo>
+codex plugin marketplace add qa594741/tavily-agents-plugins --ref main
 codex plugin add tavily@tavily-agents-plugins
 ```
 
-For the GitHub repository:
+For this local Windows checkout:
 
 ```bash
-codex plugin marketplace add https://github.com/qa594741/tavily-agents-plugins
+codex plugin marketplace add "C:\Users\First Shen\personal\plugins\codex\tavily-agents-plugins"
 codex plugin add tavily@tavily-agents-plugins
 ```
 
